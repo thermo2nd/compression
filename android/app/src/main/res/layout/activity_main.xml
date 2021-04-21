@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff">
+
+        <Spinner
+            android:id="@+id/imageSelector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+        <ImageView
+            android:id="@+id/originalImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/originalImageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/originalImage"
+            android:layout_alignTop="@+id/originalImage"
+            android:layout_alignEnd="@+id/originalImage"
+            android:layout_alignBottom="@+id/originalImage"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:textColor="#000000" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+        <ImageView
+            android:id="@+id/compressedImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/compressedImageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/compressedImage"
+            android:layout_alignTop="@+id/compressedImage"
+            android:layout_alignEnd="@+id/compressedImage"
+            android:layout_alignBottom="@+id/compressedImage"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:textColor="#000000" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

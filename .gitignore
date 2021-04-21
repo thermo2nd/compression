@@ -36,3 +36,6 @@ ipython_config.py
 .AppleDouble
 .LSOverride
 ._*
+
+# intellij
+.idea
